@@ -724,7 +724,7 @@ const Home = () => {
               </div>
 
               {/* Cards */}
-              <div className="relative h-96 perspective">
+              <div className="relative h-96 md:h-[18rem] lg:h-96 perspective mb-36 md:mb-0">
                 {[
                   {
                     title: "Konsultacja",

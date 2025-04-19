@@ -122,7 +122,11 @@ const Navbar = () => {
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-primary-300 hover:bg-white/10 focus:outline-none transition-colors duration-300"
+              className={`inline-flex items-center justify-center p-2 rounded-md ${
+                scrolled
+                  ? "text-white hover:text-primary-300 hover:bg-white/10"
+                  : "text-secondary-800 hover:text-primary-600 hover:bg-primary-50/80"
+              } focus:outline-none transition-colors duration-300`}
               aria-expanded="false"
             >
               <span className="sr-only">Otwórz menu główne</span>
